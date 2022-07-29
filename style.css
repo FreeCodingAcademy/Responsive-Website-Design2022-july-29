@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.logo{
+    margin:20px;
+    color: cyan;
+    font-weight: 900;
+    font-size: 15px;
+}
+.logo span{
+    color: #0076ff;
+}
+nav ul{
+    display: flex;
+    margin:20px;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul a{
+    font-weight: 400;
+    font-size: 12px;
+    color: #bed6e2;
+}
+nav ul a:hover{
+    color: #1e2122;
+}
+.btn{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+.btn a{
+    font-size: 12px;
+    background: linear-gradient(to right , #00e5ff , #0076ff);
+    padding: 8px 30px;
+    color: white;
+    border-radius: 30px;
+}
+.toggle-btn{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+.toggle-btn i{
+    color: #0076ff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+.text-container{
+    padding-top: 10%;
+    padding-left: 10%;
+}
+.text-container h1{
+    color: #222628;
+    font-size: 40px;
+}
+.text-container p{
+    width: 40vw;
+    font-size: 10px;
+    color: #9cacb4;
+    margin-bottom: 20px;
+}
+.text-container .btn2{
+    font-size: 12px;
+    background: linear-gradient(to right , #00e5ff , #0076ff);
+    padding: 8px 30px;
+    color: white;
+    border-radius: 30px;
+    display: none;
+}
+.sm-icons{
+    padding-top: 3%;
+    padding-left: 10%;
+}
+.sm-icons a{
+    color: #9cacb4;
+    margin: 0 10px;
+    font-size: 15px;
+}
+.image img{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 14%;
+    z-index: -3;
+}
+@media(max-width : 650px){
+    .btn{
+        display: none;
+    }
+    .toggle-btn i{
+        display: block;
+    }
+    nav ul{
+        display: block;
+        width: 100%;
+        text-align: right;
+        background-color: #e6f1ff;
+        position: absolute;
+        right: 0;
+        margin: 60px 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 1s;
+    }
+    nav ul li{
+        margin: 15px 0;
+        padding-right: 20px;
+    }
+    nav ul a{
+        color: black;
+        cursor: pointer;
+    }
+    .text-container .btn2{
+        display: block;
+        width: 140px;
+    }
+    .image{
+        display: none;
+    }
+    .text-container h1{
+        font-size: 26px;
+    }
+    .text-container p{
+        width: 70vw;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .sm-icons{
+        padding-top: 30px;
+    }
+}
